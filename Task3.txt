@@ -1,0 +1,23 @@
+English LM:
+ 	No Smoothing:
+		14.025
+	Smoothing:
+		54.3716		delta = 0.1     
+		74.3792		delta = 0.3 
+		89.2499		delta = 0.5    
+		101.9435	delta = 0.7    
+		113.3420	delta = 0.9      
+French LM:
+ 	No Smoothing:
+		13.0348
+	Smoothing:
+		60.333		delta = 0.1     
+		86.6521		delta = 0.3 
+		106.5615	delta = 0.5    
+		123.7914	delta = 0.7    
+		139.4260	delta = 0.9       
+		
+
+Observations
+Both models did better without smoothing, which seems unintuitive at first because it feels as though smoothing should reduce perplexity. However, we tested the models on data with the same lexicon and vocabulary as the training data so it would make sense that the model scores a lower perplexity without
+the added 'invisible-counts' that smoothing creates.
